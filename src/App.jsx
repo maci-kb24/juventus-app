@@ -1,10 +1,13 @@
 import "./App.css";
-import "normalize.css";
+import { Jumbotron, RecentMatches, MeetPlayers, Subscribe } from "./components";
 
 function App() {
   return (
     <>
-      <h1>hello</h1>
+      <Jumbotron />
+      <RecentMatches />
+      <MeetPlayers />
+      <Subscribe />
     </>
   );
 }

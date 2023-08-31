@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import "normalize.css";
 import "./index.css";
+import "@fontsource/righteous";
+import "@fontsource/righteous/400.css";
+import Layout from "./components/Layout/Layout";
 
-const root = document.getElementById("root");
-
-if (root) {
-  ReactDOM.createRoot(root).render(
-    <React.StrictMode>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Layout>
       <App />
-    </React.StrictMode>
-  );
-} else {
-  console.error("Root element with ID 'root' not found.");
-}
+    </Layout>
+  </React.StrictMode>
+);
