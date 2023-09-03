@@ -1,8 +1,10 @@
+import { Box } from "@mui/material";
+
 const Jumbotron = () => {
   return (
-    <section className="jumbotron">
+    <Box className="jumbotron">
       <h3>Jumbotron</h3>
-    </section>
+    </Box>
   );
 };
 

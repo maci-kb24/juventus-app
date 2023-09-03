@@ -1,8 +1,10 @@
+import { Box } from "@mui/material";
+
 const RecentMatches = () => {
   return (
-    <section className="recent-matches">
+    <Box className="recent-matches">
       <h3>Recent Matches</h3>
-    </section>
+    </Box>
   );
 };
 

@@ -1,8 +1,10 @@
+import { Box } from "@mui/material";
+
 const MeetPlayers = () => {
   return (
-    <section className="meet-players">
+    <Box className="meet-players">
       <h3>Meet The Players</h3>
-    </section>
+    </Box>
   );
 };
 
