@@ -34,7 +34,7 @@ const Subscribe = () => {
               />
             </Box>
           </Stack>
-          <Stack alignItems={"center"} sx={{ pt: 3 }}>
+          <Stack component="form" alignItems={"center"} sx={{ pt: 3 }}>
             <Typography variant="h5" sx={{ color: "text.secondary", pb: 1 }}>
               Enter your email
             </Typography>
