@@ -1,9 +1,11 @@
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 const MeetPlayers = () => {
   return (
     <Box className="meet-players">
-      <h3>Meet The Players</h3>
+      <Container maxWidth="md">
+        <h3>Meet The Players</h3>
+      </Container>
     </Box>
   );
 };

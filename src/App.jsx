@@ -1,4 +1,3 @@
-import "./App.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -18,6 +17,7 @@ const theme = createTheme({
     grey: {
       main: "#CCCCCC",
       light: "#E0E0E0",
+      lighter: "#EDEDED",
     },
     text: {
       primary: "#FFFFFF",
@@ -25,6 +25,7 @@ const theme = createTheme({
     },
     background: {
       default: "#333333",
+      error: "#EF484D",
     },
   },
   typography: {

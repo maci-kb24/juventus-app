@@ -1,9 +1,11 @@
-import { Box } from "@mui/material";
+import { Box, Container } from "@mui/material";
 
 const RecentMatches = () => {
   return (
     <Box className="recent-matches">
-      <h3>Recent Matches</h3>
+      <Container maxWidth="md">
+        <h3>Recent Matches</h3>
+      </Container>
     </Box>
   );
 };
