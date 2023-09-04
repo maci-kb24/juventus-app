@@ -6,6 +6,8 @@ import {
   Typography,
   Button,
 } from "@mui/material";
+import TextField from "@mui/material/TextField";
+import { FormControl, FormLabel } from "@mui/material";
 import Jersey from "../../assets/images/jersey.png";
 
 const Subscribe = () => {
@@ -59,6 +61,11 @@ const Subscribe = () => {
               Enroll
             </Button>
           </Stack>
+          <FormControl>
+            <FormLabel>Enter Name</FormLabel>
+            <TextField></TextField>
+            <Button>Submit</Button>
+          </FormControl>
         </Box>
       </Container>
     </Box>
