@@ -1,5 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import featured from "../../assets/images/featured.png";
+import featured from "../../../assets/images/featured.png";
 
 const Jumbotron = () => {
   return (

@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { FormControl, FormLabel } from "@mui/material";
-import Jersey from "../../assets/images/jersey.png";
+import Jersey from "../../../assets/images/jersey.png";
 
 const Subscribe = () => {
   return (
