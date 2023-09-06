@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "normalize.css";
-import "./index.css";
 import "@fontsource/righteous";
 import "@fontsource/righteous/400.css";
 import { ThemeProvider, createTheme } from "@mui/material";
@@ -12,9 +11,12 @@ const theme = createTheme({
     primary: {
       main: "#212121",
     },
-    error: {
+    secondary: {
       main: "#EF484D",
     },
+    // error: {
+    //   main: "#EF484D",
+    // },
     grey: {
       main: "#CCCCCC",
       light: "#E0E0E0",
@@ -24,6 +26,7 @@ const theme = createTheme({
       primary: "#FFFFFF",
       secondary: "#333333",
       contrast: "#BDBDBD",
+      dark: "#000000",
     },
     background: {
       default: "#333333",
