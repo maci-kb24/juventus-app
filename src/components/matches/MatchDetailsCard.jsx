@@ -1,0 +1,156 @@
+import { Stack, Typography, Box } from "@mui/material";
+import juve from "../../assets/images/logos/teams/juve.png";
+import empoli from "../../assets/images/logos/teams/empoli.png";
+
+const MatchesDetailsCard = () => {
+  return (
+    <Box className="matches-info">
+      <Stack
+        direction={"row"}
+        className="match-result"
+        sx={{ borderBottom: "1px solid rgba(0,0,58,.5)" }}
+      >
+        <Box sx={{ borderRight: "1px solid rgba(0, 0, 58, 0.2)", pr: 2, m: 2 }}>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={juve} />
+            <Typography variant="body1" color={"primary"} marginX={1}>
+              Juvenutus
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              2
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={empoli} />
+            <Typography variant="body1" color={"primary"} marginX={1} flex={1}>
+              Empoli
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              1
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          marginLeft={1}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+        >
+          <Typography color={"primary"}>Date: 11.09.2022</Typography>
+          <Typography color={"primary"}>Stadium: ALianz</Typography>
+          <Typography color={"primary"}>Referee: Marcus</Typography>
+        </Box>
+      </Stack>
+      <Stack
+        direction={"row"}
+        className="match-result"
+        sx={{ borderBottom: "1px solid rgba(0,0,58,.5)" }}
+      >
+        <Box sx={{ borderRight: "1px solid rgba(0, 0, 58, 0.2)", pr: 2, m: 2 }}>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={juve} />
+            <Typography variant="body1" color={"primary"} marginX={1}>
+              Juvenutus
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              2
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={empoli} />
+            <Typography variant="body1" color={"primary"} marginX={1} flex={1}>
+              Empoli
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              1
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          marginLeft={1}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+        >
+          <Typography color={"primary"}>Date: 11.09.2022</Typography>
+          <Typography color={"primary"}>Stadium: ALianz</Typography>
+          <Typography color={"primary"}>Referee: Marcus</Typography>
+        </Box>
+      </Stack>
+      <Stack
+        direction={"row"}
+        className="match-result"
+        sx={{ borderBottom: "1px solid rgba(0,0,58,.5)" }}
+      >
+        <Box sx={{ borderRight: "1px solid rgba(0, 0, 58, 0.2)", pr: 2, m: 2 }}>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={juve} />
+            <Typography variant="body1" color={"primary"} marginX={1}>
+              Juvenutus
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              2
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={empoli} />
+            <Typography variant="body1" color={"primary"} marginX={1} flex={1}>
+              Empoli
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              1
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          marginLeft={1}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+        >
+          <Typography color={"primary"}>Date: 11.09.2022</Typography>
+          <Typography color={"primary"}>Stadium: ALianz</Typography>
+          <Typography color={"primary"}>Referee: Marcus</Typography>
+        </Box>
+      </Stack>
+      <Stack
+        direction={"row"}
+        className="match-result"
+        sx={{ borderBottom: "1px solid rgba(0,0,58,.5)" }}
+      >
+        <Box sx={{ borderRight: "1px solid rgba(0, 0, 58, 0.2)", pr: 2, m: 2 }}>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={juve} />
+            <Typography variant="body1" color={"primary"} marginX={1}>
+              Juvenutus
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              2
+            </Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+            <img src={empoli} />
+            <Typography variant="body1" color={"primary"} marginX={1} flex={1}>
+              Empoli
+            </Typography>
+            <Typography variant="body1" color={"secondary"} marginLeft={8}>
+              1
+            </Typography>
+          </Box>
+        </Box>
+        <Box
+          marginLeft={1}
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+        >
+          <Typography color={"primary"}>Date: 11.09.2022</Typography>
+          <Typography color={"primary"}>Stadium: ALianz</Typography>
+          <Typography color={"primary"}>Referee: Marcus</Typography>
+        </Box>
+      </Stack>
+    </Box>
+  );
+};
+
+export default MatchesDetailsCard;

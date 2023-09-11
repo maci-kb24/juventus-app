@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "./containers/App";
 import "normalize.css";
 import "@fontsource/righteous";
 import "@fontsource/righteous/400.css";
@@ -14,9 +14,6 @@ const theme = createTheme({
     secondary: {
       main: "#EF484D",
     },
-    // error: {
-    //   main: "#EF484D",
-    // },
     grey: {
       main: "#CCCCCC",
       light: "#E0E0E0",

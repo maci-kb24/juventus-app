@@ -1,9 +1,4 @@
-import {
-  Jumbotron,
-  RecentMatches,
-  MeetPlayers,
-  Subscribe,
-} from "../components";
+import { Jumbotron, RecentMatches, MeetPlayers, Subscribe } from "../sections";
 
 const Home = () => {
   return (

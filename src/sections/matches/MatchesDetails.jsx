@@ -1,12 +1,16 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
-import { juve } from "../../assets/images/logos/teams";
+import MatchesDetailsCard from "../../components/matches/MatchDetailsCard";
 
 const MatchesDetails = () => {
   return (
     <Box sx={{ backgroundColor: "grey.light" }} className="matches-details">
-      <Stack className="matches-filter" direction={"row"}>
+      <Stack
+        className="matches-filter"
+        direction={"row"}
+        sx={{ borderBottom: "1px solid #000003" }}
+      >
         <Box
           className="show-match"
           sx={{ borderRight: "1px solid #000003", p: 2 }}
@@ -40,29 +44,7 @@ const MatchesDetails = () => {
           </ButtonGroup>
         </Box>
       </Stack>
-      <Box className="matches-info">
-        <Stack
-          direction={"row"}
-          className="match-result"
-          sx={{ borderBottom: "1px solid rgba(0,0,58,.5)" }}
-        >
-          <Box
-            sx={{ borderRight: "1px solid rgba(0, 0, 58, 0.2)", pr: 2, m: 2 }}
-          >
-            <Box>
-              <img src={juve} />
-              <Typography variant="body1" color={"primary"}>
-                Juvenutus
-              </Typography>
-              <Typography variant="body1" color={"secondary"}>
-                2
-              </Typography>
-            </Box>
-            <Box></Box>
-          </Box>
-          <Box></Box>
-        </Stack>
-      </Box>
+      <MatchesDetailsCard />
     </Box>
   );
 };

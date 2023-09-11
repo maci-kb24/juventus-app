@@ -2,7 +2,7 @@ import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Danilo from "../../../assets/images/players/Def/danilo.png";
+import Danilo from "../../assets/images/players/Def/danilo.png";
 
 const MeetPlayers = () => {
   return (
