@@ -11,41 +11,48 @@ const Jumbotron = () => {
       <Stack
         direction="row"
         justifyContent={"center"}
-        alignItems={"center"}
         position={"relative"}
+        pt={8}
       >
-        <Box position={"absolute"} left={"22%"} bottom={"-18%"}>
-          <Typography sx={{ lineHeight: "3" }}>
-            <Typography
-              variant="h1"
-              component="span"
-              sx={{ backgroundColor: "error.main" }}
-            >
-              38
+        <Box flex={"0 0 33%"}>
+          <Box position={"relative"} left={"35%"} bottom={"-50%"}>
+            <Typography sx={{ lineHeight: "3" }}>
+              <Typography
+                variant="h1"
+                component="span"
+                sx={{ backgroundColor: "error.main" }}
+              >
+                38
+              </Typography>
+              <br />
+              <Typography
+                variant="h3"
+                component="span"
+                sx={{
+                  backgroundColor: "error.main",
+                  textTransform: "uppercase",
+                }}
+              >
+                seria a
+              </Typography>
+              <br />
+              <Typography
+                variant="h3"
+                component="span"
+                sx={{
+                  backgroundColor: "error.main",
+                  textTransform: "uppercase",
+                }}
+              >
+                championships
+              </Typography>
             </Typography>
-            <br />{" "}
-            <Typography
-              variant="h3"
-              component="span"
-              sx={{
-                backgroundColor: "error.main",
-                textTransform: "uppercase",
-              }}
-            >
-              seria a
-            </Typography>
-            <br />
-            <Typography
-              variant="h3"
-              component="span"
-              sx={{ backgroundColor: "error.main", textTransform: "uppercase" }}
-            >
-              championships
-            </Typography>
-          </Typography>
+          </Box>
         </Box>
-        <Box>
-          <img src={featured} alt={featured} />
+        <Box flex={"0 0 33%"}>
+          <Box position={"relative"} left={"20%"}>
+            <img src={featured} alt={featured} />
+          </Box>
         </Box>
       </Stack>
     </Box>

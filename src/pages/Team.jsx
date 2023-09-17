@@ -28,6 +28,7 @@ const Team = () => {
           </Box>
           <Stack direction={"row"} spacing={2}>
             <PlayerCard />
+
             <PlayerCard />
             <PlayerCard />
           </Stack>
@@ -38,7 +39,7 @@ const Team = () => {
               variant="h1"
               textTransform={"capitalize"}
               color={"text.contrast"}
-              pb={3}
+              py={3}
             >
               defenders
             </Typography>
@@ -70,7 +71,7 @@ const Team = () => {
               variant="h1"
               textTransform={"capitalize"}
               color={"text.contrast"}
-              pb={3}
+              py={3}
             >
               midfielders
             </Typography>
@@ -108,7 +109,7 @@ const Team = () => {
               variant="h1"
               textTransform={"capitalize"}
               color={"text.contrast"}
-              pb={3}
+              py={3}
             >
               attackers
             </Typography>

@@ -6,11 +6,7 @@ import Typography from "@mui/material/Typography";
 function PlayerCard() {
   return (
     <Card sx={{ maxWidth: 260, border: "9px solid white" }}>
-      <CardMedia
-        sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      />
+      <CardMedia sx={{ height: 140 }} />
       <CardContent>
         <Typography
           gutterBottom
@@ -18,8 +14,9 @@ function PlayerCard() {
           component="div"
           sx={{ color: "text.contrast" }}
         >
-          Lizard
+          Name
         </Typography>
+        <Typography sx={{ color: "text.contrast" }}>9</Typography>
       </CardContent>
     </Card>
   );

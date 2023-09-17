@@ -2,7 +2,7 @@ import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Danilo from "../../assets/images/players/Def/danilo.png";
+import DaniloFeatured from "../../assets/images/players/Def/DaniloFeatured.png";
 
 const MeetPlayers = () => {
   return (
@@ -18,13 +18,74 @@ const MeetPlayers = () => {
     >
       <Container maxWidth="md">
         <Stack direction={"row"} justifyContent={"center"}>
-          <Box>
+          <Box position={"relative"}>
             <Card sx={{ minWidth: 260, border: "9px solid white" }}>
               <CardMedia
                 component="img"
                 height="240"
-                image={Danilo}
-                alt={Danilo}
+                image={DaniloFeatured}
+                alt={DaniloFeatured}
+              />
+              <CardContent>
+                <Typography
+                  sx={{ fontSize: 20, fontWeight: 500 }}
+                  color="text.secondary"
+                >
+                  Luiz Da Silva Danilo
+                </Typography>
+
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                  6
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
+              <CardMedia
+                component="img"
+                height="240"
+                image={DaniloFeatured}
+                alt={DaniloFeatured}
+              />
+              <CardContent>
+                <Typography
+                  sx={{ fontSize: 20, fontWeight: 500 }}
+                  color="text.secondary"
+                >
+                  Luiz Da Silva Danilo
+                </Typography>
+
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                  6
+                </Typography>
+              </CardContent>
+            </Card>
+
+            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
+              <CardMedia
+                component="img"
+                height="240"
+                image={DaniloFeatured}
+                alt={DaniloFeatured}
+              />
+              <CardContent>
+                <Typography
+                  sx={{ fontSize: 20, fontWeight: 500 }}
+                  color="text.secondary"
+                >
+                  Luiz Da Silva Danilo
+                </Typography>
+
+                <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                  6
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
+              <CardMedia
+                component="img"
+                height="240"
+                image={DaniloFeatured}
+                alt={DaniloFeatured}
               />
               <CardContent>
                 <Typography
@@ -42,10 +103,57 @@ const MeetPlayers = () => {
           </Box>
           <Box>
             <Typography variant="h1">
-              Meet <br />
-              The <br /> Players
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  backgroundColor: "primary.main",
+                  display: "inline-block",
+                  p: 1,
+                  mb: 3,
+                }}
+              >
+                Meet
+              </Typography>
+              <br />
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  backgroundColor: "primary.main",
+                  display: "inline-block",
+                  p: 1,
+                  mb: 3,
+                }}
+              >
+                The
+              </Typography>
+              <br />
+              <Typography
+                component="span"
+                variant="h1"
+                sx={{
+                  backgroundColor: "primary.main",
+                  display: "inline-block",
+                  p: 1,
+                  mb: 3,
+                }}
+              >
+                Players
+              </Typography>
             </Typography>
-            <Button>Meet the team</Button>
+            <Button
+              size="lg"
+              sx={{
+                backgroundColor: "background.error",
+                color: "text.primary",
+                "&:hover": {
+                  backgroundColor: "background.error",
+                },
+              }}
+            >
+              Meet the team
+            </Button>
           </Box>
         </Stack>
       </Container>

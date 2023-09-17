@@ -1,16 +1,26 @@
+import { useState } from "react";
+
 import {
   Box,
   Container,
-  Input,
+  // Input,
   Stack,
   Typography,
   Button,
+  TextField,
 } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import { FormControl, FormLabel } from "@mui/material";
+
 import Jersey from "../../assets/images/jersey.png";
 
 const Subscribe = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(true); // State to track email validation
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+    setIsValidEmail(true); // Reset validation status when input changes
+  };
+
   return (
     <Box
       component="section"
@@ -23,7 +33,8 @@ const Subscribe = () => {
             <Box>
               <Typography
                 variant="h1"
-                sx={{ textTransform: "uppercase", color: "grey.light" }}
+                textTransform={"uppercase"}
+                color={"grey.light"}
               >
                 win a jersey
               </Typography>
@@ -40,7 +51,7 @@ const Subscribe = () => {
             <Typography variant="h5" sx={{ color: "text.secondary", pb: 1 }}>
               Enter your email
             </Typography>
-            <Input
+            {/* <Input
               size="lg"
               variant="outlined"
               placeholder="Enter your email"
@@ -50,22 +61,31 @@ const Subscribe = () => {
                 p: "8px 16px",
                 width: "35%",
               }}
-            ></Input>
+            ></Input> */}
+            <TextField
+              label="Email"
+              variant="outlined"
+              // fullWidth
+              sx={{ width: "30%" }}
+              value={inputValue}
+              onChange={handleInputChange}
+              error={!isValidEmail} // Apply error style if email is invalid
+              helperText={!isValidEmail ? "Invalid email address" : ""}
+            />
             <Button
               size="lg"
               sx={{
                 backgroundColor: "background.error",
                 color: "text.primary",
+                "&:hover": {
+                  backgroundColor: "background.error",
+                },
               }}
+              type="submit"
             >
               Enroll
             </Button>
           </Stack>
-          <FormControl>
-            <FormLabel>Enter Name</FormLabel>
-            <TextField></TextField>
-            <Button>Submit</Button>
-          </FormControl>
         </Box>
       </Container>
     </Box>
