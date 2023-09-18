@@ -51,7 +51,7 @@ const Jumbotron = () => {
         </Box>
         <Box flex={"0 0 33%"}>
           <Box position={"relative"} left={"20%"}>
-            <img src={featured} alt={featured} />
+            <img src={featured} alt={featured} height={"15rem"} />
           </Box>
         </Box>
       </Stack>

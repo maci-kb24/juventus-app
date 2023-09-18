@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import DaniloFeatured from "../../assets/images/players/Def/DaniloFeatured.png";
+import Roll from "react-reveal/Roll";
 
 const MeetPlayers = () => {
   return (
@@ -18,88 +19,115 @@ const MeetPlayers = () => {
     >
       <Container maxWidth="md">
         <Stack direction={"row"} justifyContent={"center"}>
-          <Box position={"relative"}>
-            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
-              <CardMedia
-                component="img"
-                height="240"
-                image={DaniloFeatured}
-                alt={DaniloFeatured}
-              />
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 20, fontWeight: 500 }}
-                  color="text.secondary"
-                >
-                  Luiz Da Silva Danilo
-                </Typography>
+          <Box className="players">
+            <Roll left className="player_one">
+              <Card
+                sx={{
+                  minWidth: 240,
+                  border: "9px solid white",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={DaniloFeatured}
+                  alt={DaniloFeatured}
+                />
+                <CardContent>
+                  <Typography
+                    sx={{ fontSize: 20, fontWeight: 500 }}
+                    color="text.secondary"
+                  >
+                    Luiz Da Silva Danilo
+                  </Typography>
 
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  6
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
-              <CardMedia
-                component="img"
-                height="240"
-                image={DaniloFeatured}
-                alt={DaniloFeatured}
-              />
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 20, fontWeight: 500 }}
-                  color="text.secondary"
-                >
-                  Luiz Da Silva Danilo
-                </Typography>
+                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    6
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Roll>
+            <Roll top>
+              <Card
+                sx={{
+                  minWidth: 240,
+                  border: "9px solid white",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={DaniloFeatured}
+                  alt={DaniloFeatured}
+                />
+                <CardContent>
+                  <Typography
+                    sx={{ fontSize: 20, fontWeight: 500 }}
+                    color="text.secondary"
+                  >
+                    Luiz Da Silva Danilo
+                  </Typography>
 
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  6
-                </Typography>
-              </CardContent>
-            </Card>
+                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    6
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Roll>
+            <Roll right>
+              <Card
+                sx={{
+                  minWidth: 240,
+                  border: "9px solid white",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={DaniloFeatured}
+                  alt={DaniloFeatured}
+                />
+                <CardContent>
+                  <Typography
+                    sx={{ fontSize: 20, fontWeight: 500 }}
+                    color="text.secondary"
+                  >
+                    Luiz Da Silva Danilo
+                  </Typography>
 
-            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
-              <CardMedia
-                component="img"
-                height="240"
-                image={DaniloFeatured}
-                alt={DaniloFeatured}
-              />
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 20, fontWeight: 500 }}
-                  color="text.secondary"
-                >
-                  Luiz Da Silva Danilo
-                </Typography>
+                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    6
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Roll>
+            <Roll bottom>
+              <Card
+                sx={{
+                  minWidth: 240,
+                  border: "9px solid white",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={DaniloFeatured}
+                  alt={DaniloFeatured}
+                />
+                <CardContent>
+                  <Typography
+                    sx={{ fontSize: 20, fontWeight: 500 }}
+                    color="text.secondary"
+                  >
+                    Luiz Da Silva Danilo
+                  </Typography>
 
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  6
-                </Typography>
-              </CardContent>
-            </Card>
-            <Card sx={{ minWidth: 260, border: "9px solid white" }}>
-              <CardMedia
-                component="img"
-                height="240"
-                image={DaniloFeatured}
-                alt={DaniloFeatured}
-              />
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 20, fontWeight: 500 }}
-                  color="text.secondary"
-                >
-                  Luiz Da Silva Danilo
-                </Typography>
-
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  6
-                </Typography>
-              </CardContent>
-            </Card>
+                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    6
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Roll>
           </Box>
           <Box>
             <Typography variant="h1">
@@ -143,6 +171,9 @@ const MeetPlayers = () => {
               </Typography>
             </Typography>
             <Button
+              link
+              href="/team"
+              variant="contained"
               size="lg"
               sx={{
                 backgroundColor: "background.error",
@@ -160,5 +191,7 @@ const MeetPlayers = () => {
     </Box>
   );
 };
+
+//i want to create a card with a picture of the player and his name and number, and then have 4 of them in a row, and then each div will have a roll animation and overlap with slight position change top and left,should be easy to do with mui,since i can just use the card component and then add the roll animation to it, and then just change the position of
 
 export default MeetPlayers;

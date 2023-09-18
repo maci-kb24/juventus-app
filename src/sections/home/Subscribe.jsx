@@ -62,6 +62,7 @@ const Subscribe = () => {
                 width: "35%",
               }}
             ></Input> */}
+
             <TextField
               label="Email"
               variant="outlined"

@@ -4,6 +4,7 @@ import Layout from "../components/layout/Layout";
 import Home from "../pages/Home";
 import Team from "../pages/Team";
 import Matches from "../pages/Matches";
+import "./app.css";
 
 function App() {
   return (
