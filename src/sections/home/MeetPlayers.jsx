@@ -3,7 +3,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import DaniloFeatured from "../../assets/images/players/Def/DaniloFeatured.png";
-import Roll from "react-reveal/Roll";
 
 const MeetPlayers = () => {
   return (
@@ -20,7 +19,6 @@ const MeetPlayers = () => {
       <Container maxWidth="md">
         <Stack direction={"row"} justifyContent={"center"}>
           <Box className="players">
-            <Roll left className="player_one">
               <Card
                 sx={{
                   minWidth: 240,
@@ -46,8 +44,31 @@ const MeetPlayers = () => {
                   </Typography>
                 </CardContent>
               </Card>
-            </Roll>
-            <Roll top>
+                         <Card
+                sx={{
+                  minWidth: 240,
+                  border: "9px solid white",
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  height="240"
+                  image={DaniloFeatured}
+                  alt={DaniloFeatured}
+                />
+                <CardContent>
+                  <Typography
+                    sx={{ fontSize: 20, fontWeight: 500 }}
+                    color="text.secondary"
+                  >
+                    Luiz Da Silva Danilo
+                  </Typography>
+
+                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                    6
+                  </Typography>
+                </CardContent>
+              </Card>
               <Card
                 sx={{
                   minWidth: 240,
@@ -73,8 +94,6 @@ const MeetPlayers = () => {
                   </Typography>
                 </CardContent>
               </Card>
-            </Roll>
-            <Roll right>
               <Card
                 sx={{
                   minWidth: 240,
@@ -100,34 +119,6 @@ const MeetPlayers = () => {
                   </Typography>
                 </CardContent>
               </Card>
-            </Roll>
-            <Roll bottom>
-              <Card
-                sx={{
-                  minWidth: 240,
-                  border: "9px solid white",
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  height="240"
-                  image={DaniloFeatured}
-                  alt={DaniloFeatured}
-                />
-                <CardContent>
-                  <Typography
-                    sx={{ fontSize: 20, fontWeight: 500 }}
-                    color="text.secondary"
-                  >
-                    Luiz Da Silva Danilo
-                  </Typography>
-
-                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    6
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Roll>
           </Box>
           <Box>
             <Typography variant="h1">

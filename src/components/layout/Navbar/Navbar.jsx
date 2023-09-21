@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" sx={{zIndex: '9999'}}>
       <Toolbar sx={{ justifyContent: "space-between", py: 2 }}>
         <Box>
           <Link to="/">
