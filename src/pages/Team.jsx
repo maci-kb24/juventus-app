@@ -1,9 +1,6 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import PlayerCard from "../components/team/PlayerCard";
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import Wojciech from "../assets/images/players/GK/Sczeschy.png";
-import Perin from "../assets/images/players/GK/Perin.png";
-import Pinsoglio from "../assets/images/players/GK/Pinsoglio.png";
 import Sciglio from "../assets/images/players/Def/DeSciglio.png";
 import Bremer from "../assets/images/players/Def/Bremer.png";
 import Danilo from "../assets/images/players/Def/Danilo.png";
@@ -20,7 +17,7 @@ import Vlahovic from "../assets/images/players/Att/Vlahovic.png";
 import Milik from "../assets/images/players/Att/Milik.png";
 import Kean from "../assets/images/players/Att/Kean.png";
 import { Slide } from "react-awesome-reveal";
-
+import { goalkeepers } from "../players";
 
 const Team = () => {
   return (
@@ -49,9 +46,17 @@ const Team = () => {
           </Box>
           <Stack direction={"row"} spacing={2}>
             <Slide direction={"left"} triggerOnce>
-            <PlayerCard name="Wojciech Szczesny" number={1} image={Wojciech} />
+            {/* <PlayerCard name="Wojciech Szczesny" number={1} image={Wojciech} />
             <PlayerCard name="Mattia Perin" number={36} image={Perin} /> 
-            <PlayerCard name="Carlo Pinsoglio" number={23} image={Pinsoglio} />
+            <PlayerCard name="Carlo Pinsoglio" number={23} image={Pinsoglio} /> */}
+            {goalkeepers.map((goalkeeper) => (
+              <PlayerCard
+                key={goalkeeper.id}
+                name={goalkeeper.name}
+                number={goalkeeper.number}
+                image={goalkeeper.image}
+              />
+            ))}
             </Slide>
           </Stack>
         </Box>
@@ -178,6 +183,6 @@ const Team = () => {
 };
 
 
-
+// i want to get the data from the players.json file and map it to the player card component
 
 export default Team;
