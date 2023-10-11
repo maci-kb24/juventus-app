@@ -169,7 +169,8 @@ const RecentMatches = () => {
           </Grid>
         </Grid2>
         <Box>
-          <Button
+          <Button link
+              href="/matches"
             sx={{ color: "text.primary", backgroundColor: "background.error" }}
           >
             see more matches
