@@ -1,23 +1,9 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import PlayerCard from "../components/team/PlayerCard";
-import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import Sciglio from "../assets/images/players/Def/DeSciglio.png";
-import Bremer from "../assets/images/players/Def/Bremer.png";
-import Danilo from "../assets/images/players/Def/Danilo.png";
-import AlexSandro from "../assets/images/players/Def/AlexSandro.png";
-import Gatti from "../assets/images/players/Def/Gatti.png";
-import Locatelli from "../assets/images/players/Mid/Locatelli.png";
-import Pogba from "../assets/images/players/Mid/Pogba.png";
-import Kostic from "../assets/images/players/Mid/Kostic.png";
-import Miretti from "../assets/images/players/Mid/Miretti.png";
-import Rabiot from "../assets/images/players/Mid/Rabiot.png";
-import Fagioli from "../assets/images/players/Mid/Fagioli.png";
-import Chiesa from "../assets/images/players/Att/Chiesa.png";
-import Vlahovic from "../assets/images/players/Att/Vlahovic.png";
-import Milik from "../assets/images/players/Att/Milik.png";
-import Kean from "../assets/images/players/Att/Kean.png";
+// import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Slide } from "react-awesome-reveal";
-import { goalkeepers } from "../players";
+import { attackers, defenders, goalkeepers, midfielders } from "../players";
+import "../pages/team.css";
 
 const Team = () => {
   return (
@@ -71,33 +57,17 @@ const Team = () => {
               defenders
             </Typography>
           </Box>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={2.5}>
-            <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Mattia De Sciglio" number={2} image={Sciglio} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Gelson Bremer" number={3} image={Bremer} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Luiz Da Silva Danilo" number={6} image={Danilo}/>
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Alex Sandro" number={12} image={AlexSandro} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Federico Gatti" number={15} image={Gatti} />
-              </Slide>
-            </Grid>
-          </Grid>
+          <Stack direction={'row'} spacing={2} flexWrap={'wrap'}>
+          <Slide direction={"left"} triggerOnce>
+             {defenders.map((defender) => ( 
+             <PlayerCard 
+             key={defender.id} 
+             name={defender.name} 
+             number={defender.number} 
+             image={defender.image} />
+             ))}
+            </Slide>
+          </Stack>
         </Box>
         <Box className="midfielders">
           <Box>
@@ -110,38 +80,17 @@ const Team = () => {
               midfielders
             </Typography>
           </Box>
-          <Grid container spacing={2}>
-            <Grid item xs={12} md={2.5}>
-            <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Manuel Locatelli" number={5} image={Locatelli} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Paul Pogba" number={10} image={Pogba} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Filip Kostic" number={17} image={Kostic}/>
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-            <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Fabio Miretti" number={20} image={Miretti} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-            <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Adrien Rabiot" number={25} image={Rabiot}/>
-              </Slide>
-            </Grid>
-            <Grid item xs={4} md={2.5}>
-            <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Nicolo Fagioli" number={44} image={Fagioli}/>
-              </Slide>
-            </Grid>
-          </Grid>
+          <Stack direction={'row'} spacing={2} flexWrap={'wrap'}>
+          <Slide direction={"left"} triggerOnce>
+             {midfielders.map((midfielder) => ( 
+             <PlayerCard 
+             key={midfielder.id} 
+             name={midfielder.name} 
+             number={midfielder.number} 
+             image={midfielder.image} />
+             ))}
+            </Slide>
+          </Stack>
         </Box>
         <Box className="attackers">
           <Box>
@@ -154,7 +103,18 @@ const Team = () => {
               attackers
             </Typography>
           </Box>
-          <Grid container spacing={2}>
+          <Stack direction={'row'} spacing={2} flexWrap={'wrap'}>
+          <Slide direction={"left"} triggerOnce>
+             {attackers.map((attacker) => ( 
+             <PlayerCard 
+             key={attacker.id} 
+             name={attacker.name} 
+             number={attacker.number} 
+             image={attacker.image} />
+             ))}
+            </Slide>
+          </Stack>
+          {/* <Grid container spacing={2}>
             <Grid item xs={12} md={2.5}>
              <Slide direction={"left"} triggerOnce>
               <PlayerCard name="Federico Chiesa" number={7} image={Chiesa}/>
@@ -175,14 +135,12 @@ const Team = () => {
               <PlayerCard name="Moise Kean" number={18} image={Kean}/>
               </Slide>  
             </Grid>
-          </Grid>
+          </Grid> */}
         </Box>
       </Container>
     </Box>
   );
 };
 
-
-// i want to get the data from the players.json file and map it to the player card component
 
 export default Team;

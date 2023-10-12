@@ -1,97 +1,21 @@
 import Wojciech from "./assets/images/players/GK/Sczeschy.png";
 import Perin from "./assets/images/players/GK/Perin.png";
 import Pinsoglio from "./assets/images/players/GK/Pinsoglio.png";
-
-export const players = [
-    {
-        "goalkeepers": [
-          {
-            "id": 1,
-            "name": "Alisson Becker",
-            "number": 1,
-            "image": "https://example.com/alisson.jpg"
-          },
-          {
-            "id": 2,
-            "name": "Adrián",
-            "number": 13,
-            "image": "https://example.com/adrian.jpg"
-          }
-        ],
-        "defenders": [
-          {
-            "id": 3,
-            "name": "Trent Alexander-Arnold",
-            "number": 66,
-            "image": "https://example.com/trent.jpg"
-          },
-          {
-            "id": 4,
-            "name": "Virgil van Dijk",
-            "number": 4,
-            "image": "https://example.com/virgil.jpg"
-          },
-          {
-            "id": 5,
-            "name": "Joe Gomez",
-            "number": 12,
-            "image": "https://example.com/joe.jpg"
-          },
-          {
-            "id": 6,
-            "name": "Joël Matip",
-            "number": 32,
-            "image": "https://example.com/joel.jpg"
-          }
-        ],
-        "midfielders": [
-          {
-            "id": 7,
-            "name": "Jordan Henderson",
-            "number": 14,
-            "image": "https://example.com/jordan.jpg"
-          },
-          {
-            "id": 8,
-            "name": "Fabinho",
-            "number": 3,
-            "image": "https://example.com/fabinho.jpg"
-          },
-          {
-            "id": 9,
-            "name": "Thiago Alcântara",
-            "number": 6,
-            "image": "https://example.com/thiago.jpg"
-          },
-          {
-            "id": 10,
-            "name": "Naby Keïta",
-            "number": 8,
-            "image": "https://example.com/naby.jpg"
-          }
-        ],
-        "attackers": [
-          {
-            "id": 11,
-            "name": "Mohamed Salah",
-            "number": 11,
-            "image": "https://example.com/mo.jpg"
-          },
-          {
-            "id": 12,
-            "name": "Sadio Mané",
-            "number": 10,
-            "image": "https://example.com/sadio.jpg"
-          },
-          {
-            "id": 13,
-            "name": "Roberto Firmino",
-            "number": 9,
-            "image": "https://example.com/bobby.jpg"
-          }
-        ]
-      }
-]
+import Sciglio from "./assets/images/players/Def/DeSciglio.png";
+import Bremer from "./assets/images/players/Def/Bremer.png";
+import Danilo from "./assets/images/players/Def/Danilo.png";
+import AlexSandro from "./assets/images/players/Def/AlexSandro.png";
+import Gatti from "./assets/images/players/Def/Gatti.png";
+import Locatelli from "./assets/images/players/Mid/Locatelli.png";
+import Pogba from "./assets/images/players/Mid/Pogba.png";
+import Kostic from "./assets/images/players/Mid/Kostic.png";
+import Miretti from "./assets/images/players/Mid/Miretti.png";
+import Rabiot from "./assets/images/players/Mid/Rabiot.png";
+import Fagioli from "./assets/images/players/Mid/Fagioli.png";
+import Chiesa from "./assets/images/players/Att/Chiesa.png";
+import Vlahovic from "./assets/images/players/Att/Vlahovic.png";
+import Milik from "./assets/images/players/Att/Milik.png";
+import Kean from "./assets/images/players/Att/Kean.png";
 
 export const goalkeepers = [
     {
@@ -112,5 +36,103 @@ export const goalkeepers = [
       "number": 23,
       "image": Pinsoglio
     }
-  
+]
+
+export const defenders = [
+  {
+    "id": 1,
+    "name": "Mattia De Sciglio",
+    "number": 2,
+    "image": Sciglio
+  },
+  {
+    "id": 2,
+    "name": "Gelson Bremer",
+    "number": 3,
+    "image": Bremer
+  },
+  {
+    "id": 3,
+    "name": "Luiz Da Silva Danilo",
+    "number": 6,
+    "image": Danilo
+  },
+  {
+    "id": 4,
+    "name": "Alex Sandro",
+    "number": 12,
+    "image": AlexSandro
+  },
+  {
+    "id": 5,
+    "name": "Federico Gatti",
+    "number": 15,
+    "image": Gatti
+  }
+]
+
+export const midfielders = [
+  {
+    "id": 1,
+    "name": "Manuel Locatelli",
+    "number": 5,
+    "image": Locatelli
+  },
+  {
+    "id": 2,
+    "name": "Paul Pogba",
+    "number": 10,
+    "image": Pogba
+  },
+  {
+    "id": 3,
+    "name": "Filip Kostic",
+    "number": 17,
+    "image": Kostic
+  },
+  {
+    "id": 4,
+    "name": "Fabio Miretti",
+    "number": 20,
+    "image": Miretti
+  },
+  {
+    "id": 5,
+    "name": "Adrien Rabiot",
+    "number": 25,
+    "image": Rabiot
+  },
+  {
+    "id": 6,
+    "name": "Nicolo Fagioli",
+    "number": 44,
+    "image": Fagioli
+  }
+]
+
+export const attackers = [
+  {
+    "id": 1,
+    "name": "Federico Chiesa",
+    "number": 7,
+    "image": Chiesa
+  },
+  {
+    "id": 2,
+    "name": "Dusan Vlahovic",
+    "number": 9,
+    "image": Vlahovic
+  },
+  {
+    "id": 3,
+    "name": "Arkadiusz Milik",
+    "number": 14,
+    "image": Milik
+  },
+  {
+    "id": 4,
+    "name": "Moise Kean",
+    "number": 18,
+    "image": Kean
+  },
 ]

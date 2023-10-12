@@ -1,21 +1,24 @@
 import { Box, Stack, Typography } from "@mui/material";
 import featured from "../../assets/images/featured.png";
+import { Slide } from "react-awesome-reveal";
+
 
 const Jumbotron = () => {
   return (
     <Box
       component="section"
       className="jumbotron"
-      sx={{ backgroundColor: "grey.main", minHeight: "100vh" }}
+      sx={{ backgroundColor: "grey.main" }}
     >
       <Stack
         direction="row"
         justifyContent={"center"}
         position={"relative"}
-        pt={8}
+        pt={8} sx={{height: '35rem'}}
       >
         <Box flex={"0 0 33%"}>
-          <Box position={"relative"} left={"35%"} bottom={"-50%"}>
+          <Slide direction="left" triggerOnce>
+          <Box position={"relative"} left={"65%"} bottom={"-30%"} >
             <Typography sx={{ lineHeight: "3" }}>
               <Typography
                 variant="h1"
@@ -48,11 +51,15 @@ const Jumbotron = () => {
               </Typography>
             </Typography>
           </Box>
+          </Slide>
+         
         </Box>
         <Box flex={"0 0 33%"}>
-          <Box position={"relative"} left={"20%"}>
-            <img src={featured} alt={featured}  />
+          <Slide direction={"down"} triggerOnce>
+          <Box position={"relative"} left={"10%"} sx={{ transform: 'translateY(65px)' }}>
+            <img src={featured} alt={featured} height={257}  />
           </Box>
+          </Slide>
         </Box>
       </Stack>
     </Box>
