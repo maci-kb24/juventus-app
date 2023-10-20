@@ -1,6 +1,5 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import PlayerCard from "../components/team/PlayerCard";
-// import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import { Slide } from "react-awesome-reveal";
 import { attackers, defenders, goalkeepers, midfielders } from "../players";
 import "../pages/team.css";
