@@ -7,6 +7,7 @@ import Sassuolo from "./assets/images/logos/teams/sassuolo.png"
 import Lecce from "./assets/images/logos/teams/lecce.png"
 import Atalanta from "./assets/images/logos/teams/atalanta.png"
 import Torino from "./assets/images/logos/teams/torino.png"
+import Milan from "./assets/images/logos/teams/milan.png"
 
 
 export const matches = [
@@ -41,7 +42,7 @@ export const matches = [
     away_img: Juventus,
     away_result: 2,
     date: '12.03.2023',
-    stadium: 'Alianz',
+    stadium: 'Carlo Castellani',
     },
     {
     id: 4,
@@ -97,5 +98,16 @@ export const matches = [
     away_result: 0,
     date: '08.10.2023',
     stadium: 'Alianz',
+    },
+    {
+    id: 9,
+    home_team: "Milan",
+    home_img: Milan,
+    home_result: 0,
+    away_team: 'Juventus',
+    away_img: Juventus,
+    away_result: 1,
+    date: '22.10.2023',
+    stadium: 'San Siro',
     },
 ]

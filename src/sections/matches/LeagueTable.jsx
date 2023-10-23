@@ -6,19 +6,19 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-// import Paper from "@mui/material/Paper";
+import { leagueTable } from "../../leaguetable";
 
-function createData(name, calories, fat, carbs, protein, points) {
-  return { name, calories, fat, carbs, protein, points };
-}
+// function createData(name, calories, fat, carbs, protein, points) {
+//   return { name, calories, fat, carbs, protein, points };
+// }
 
-const rows = [
-  createData(1, "Napoli", 23, 2, 2, 71),
-  createData(2, "Lazio", 15, 7, 5, 52),
-  createData(3, "Inter", 16, 2, 9, 50),
-  createData(4, "Milan", 14, 6, 7, 48),
-  createData(5, "Roma", 14, 5, 8, 47),
-];
+// const rows = [
+//   createData(1, "Napoli", 23, 2, 2, 71),
+//   createData(2, "Lazio", 15, 7, 5, 52),
+//   createData(3, "Inter", 16, 2, 9, 50),
+//   createData(4, "Milan", 14, 6, 7, 48),
+//   createData(5, "Roma", 14, 5, 8, 47),
+// ];
 
 const LeagueTable = () => {
   return (
@@ -44,19 +44,19 @@ const LeagueTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {leagueTable.map((team) => (
               <TableRow
-                key={row.name}
+                key={team.pos}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
-                  {row.name}
+                  {team.pos}
                 </TableCell>
-                <TableCell align="right">{row.calories}</TableCell>
-                <TableCell align="right">{row.fat}</TableCell>
-                <TableCell align="right">{row.carbs}</TableCell>
-                <TableCell align="right">{row.protein}</TableCell>
-                <TableCell align="right">{row.points}</TableCell>
+                <TableCell align="right">{team.team}</TableCell>
+                <TableCell align="right">{team.w}</TableCell>
+                <TableCell align="right">{team.d}</TableCell>
+                <TableCell align="right">{team.l}</TableCell>
+                <TableCell align="right">{team.pts}</TableCell>
               </TableRow>
             ))}
           </TableBody>
