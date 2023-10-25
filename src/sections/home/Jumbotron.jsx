@@ -18,7 +18,7 @@ const Jumbotron = () => {
       >
         <Box flex={"0 0 33%"}>
           <Slide direction="left" triggerOnce>
-          <Box position={"relative"} left={"65%"} bottom={"-30%"} >
+          <Box position={"relative"} left={"65%"} bottom={"-30%"} sx={{transform: 'translateY(149px)'}}  >
             <Typography sx={{ lineHeight: "3" }}>
               <Typography
                 variant="h1"
@@ -56,7 +56,7 @@ const Jumbotron = () => {
         </Box>
         <Box flex={"0 0 33%"}>
           <Slide direction={"down"} triggerOnce>
-          <Box position={"relative"} left={"10%"} sx={{ transform: 'translateY(65px)' }}>
+          <Box position={"relative"} left={"5%"} sx={{ transform: 'translateY(65px)' }}>
             <img src={featured} alt={featured} height={257}  />
           </Box>
           </Slide>

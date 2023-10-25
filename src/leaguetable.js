@@ -158,5 +158,4 @@ export const leagueTable = [
         l: 6,
         pts: 3
     }
-
 ]

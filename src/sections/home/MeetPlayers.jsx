@@ -162,7 +162,7 @@ const MeetPlayers = () => {
               </Typography>
             </Typography>
             <Button
-              link
+              link="true"
               href="/team"
               variant="contained"
               size="lg"
@@ -182,7 +182,5 @@ const MeetPlayers = () => {
     </Box>
   );
 };
-
-//i want to create a card with a picture of the player and his name and number, and then have 4 of them in a row, and then each div will have a roll animation and overlap with slight position change top and left,should be easy to do with mui,since i can just use the card component and then add the roll animation to it, and then just change the position of
 
 export default MeetPlayers;

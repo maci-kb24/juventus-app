@@ -1,9 +1,10 @@
-import { Box, Button, CardHeader, Container, Typography } from "@mui/material";
+import { Box, Button, CardHeader, Container, Stack, Typography } from "@mui/material";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import Grid from "@mui/material/Unstable_Grid2";
+import { matches } from "../../matches";
 
 const RecentMatches = () => {
   return (
@@ -17,156 +18,54 @@ const RecentMatches = () => {
           </Button>
         </Box>
         <Grid2 container spacing={2} sx={{ my: 7.5 }}>
-          <Grid xs={4}>
+        {matches.slice(0,6).map(match => (
+          <Grid xs={4} key={match.id}>
             <Card sx={{ minWidth: 260 }}>
-              <CardHeader subheader="01.20.2023"></CardHeader>
+              <CardHeader>
+                <Typography fontSize={'.75rem'}>
+                  {match.date}
+                </Typography>
+                </CardHeader>
               <CardContent>
-                <Typography
-                  sx={{ fontSize: 14 }}
+                <Stack direction={'row'}>
+                  <Box>
+                  <img src={match.home_img}
+        alt="Home team image" />
+                  </Box>
+                  <Box>
+                  <Typography
+                  sx={{ fontSize: '1.5rem' }}
                   color="text.secondary"
                   gutterBottom
                 >
-                  Word of the Day
+                  {match.home_team}
                 </Typography>
-                <Typography variant="h5" component="div">
-                  benevolent
+                </Box>
+                <Box marginLeft={'auto'}>
+                <Typography variant="h5"  color={'black'} >
+                 {match.home_result}
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
+                </Box>
+                </Stack>
+                <Stack direction={'row'}>
+                  <Box>
+                    <img src={match.away_img} alt=" away team image"/>
+                  </Box>
+                  <Box>
+                  <Typography sx={{ mb: 1.5, fontSize: '1.5rem' }} color="text.secondary">
+                  {match.away_team}
                 </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
+                  </Box>
+                  <Box marginLeft={'auto'}>
+                  <Typography variant="h5" color={'black'}>
+                 {match.home_result}
                 </Typography>
+                  </Box>
+                </Stack>
               </CardContent>
             </Card>
           </Grid>
-          <Grid xs={4}>
-            <Card sx={{ minWidth: 275 }}>
-              <CardHeader subheader="01.20.2023"></CardHeader>
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 14 }}
-                  color="text.secondary"
-                  gutterBottom
-                >
-                  Word of the Day
-                </Typography>
-                <Typography variant="h5" component="div">
-                  benevolent
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={4}>
-            <Card sx={{ minWidth: 275 }}>
-              <CardHeader subheader="01.20.2023"></CardHeader>
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 14 }}
-                  color="text.secondary"
-                  gutterBottom
-                >
-                  Word of the Day
-                </Typography>
-                <Typography variant="h5" component="div">
-                  benevolent
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={4}>
-            <Card sx={{ minWidth: 275 }}>
-              <CardHeader subheader="01.20.2023"></CardHeader>
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 14 }}
-                  color="text.secondary"
-                  gutterBottom
-                >
-                  Word of the Day
-                </Typography>
-                <Typography variant="h5" component="div">
-                  benevolent
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={4}>
-            <Card sx={{ minWidth: 275 }}>
-              <CardHeader subheader="01.20.2023"></CardHeader>
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 14 }}
-                  color="text.secondary"
-                  gutterBottom
-                >
-                  Word of the Day
-                </Typography>
-                <Typography variant="h5" component="div">
-                  benevolent
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid xs={4}>
-            <Card sx={{ minWidth: 275 }}>
-              <CardHeader subheader="01.20.2023"></CardHeader>
-              <CardContent>
-                <Typography
-                  sx={{ fontSize: 14 }}
-                  color="text.secondary"
-                  gutterBottom
-                >
-                  Word of the Day
-                </Typography>
-                <Typography variant="h5" component="div">
-                  benevolent
-                </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
-                <Typography variant="body2">
-                  well meaning and kindly.
-                  <br />
-                  {'"a benevolent smile"'}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+        ))}
         </Grid2>
         <Box>
           <Button link
