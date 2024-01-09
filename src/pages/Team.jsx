@@ -31,9 +31,6 @@ const Team = () => {
           </Box>
           <Stack direction={"row"} spacing={2}>
             <Slide direction={"left"} triggerOnce>
-            {/* <PlayerCard name="Wojciech Szczesny" number={1} image={Wojciech} />
-            <PlayerCard name="Mattia Perin" number={36} image={Perin} /> 
-            <PlayerCard name="Carlo Pinsoglio" number={23} image={Pinsoglio} /> */}
             {goalkeepers.map((goalkeeper) => (
               <PlayerCard
                 key={goalkeeper.id}
@@ -113,28 +110,6 @@ const Team = () => {
              ))}
             </Slide>
           </Stack>
-          {/* <Grid container spacing={2}>
-            <Grid item xs={12} md={2.5}>
-             <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Federico Chiesa" number={7} image={Chiesa}/>
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-             <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Dusan Vlahovic" number={9} image={Vlahovic} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-            <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Arkadiusz Milik" number={14} image={Milik} />
-              </Slide>
-            </Grid>
-            <Grid item xs={12} md={2.5}>
-              <Slide direction={"left"} triggerOnce>
-              <PlayerCard name="Moise Kean" number={18} image={Kean}/>
-              </Slide>  
-            </Grid>
-          </Grid> */}
         </Box>
       </Container>
     </Box>
