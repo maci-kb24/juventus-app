@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Box
       component="footer"
-      sx={{ py: 2, textAlign: "center", backgroundColor: "primary.main" }}
+      sx={{ py: 2, textAlign: "center", backgroundColor: "primary.main", marginTop: 'auto' }}
     >
       <img src={Logo} alt={Logo} width={40} />
       <Typography mt={1}>

@@ -21,6 +21,8 @@ const Navbar = () => {
           <Button color="inherit" component={Link} to="/matches">
             Matches
           </Button>
+          <Button sx={{ color: "text.primary", backgroundColor: "background.error", marginRight: '10px' }}  component={Link} to="/login">Log In</Button>
+          <Button sx={{ color: "text.primary", backgroundColor: "background.error" }}  component={Link} to="/register">Sign Up</Button>
         </Box>
       </Toolbar>
     </AppBar>
