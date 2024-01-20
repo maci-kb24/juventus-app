@@ -7,6 +7,7 @@ import Matches from "../pages/matches";
 import Login from '../pages/login';
 import Register from "../pages/register";
 import "./app.css";
+import dashboard from "../pages/dashboard";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/matches" Component={Matches} />
           <Route path="/login" Component={Login} />
           <Route path="/register" Component={Register}/>
+          <Route path="/dashboard" Component={dashboard}/>
         </Routes>
       </Layout>
     </Router>
