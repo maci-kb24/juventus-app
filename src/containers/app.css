@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .players {
   height: 78vh;
 }
@@ -28,6 +33,6 @@
 .goalkeepers {
   margin-top:115px;
 }
-.email-input input {
+.email-input input, .pass-input input {
   color: black;
 }

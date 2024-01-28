@@ -64,6 +64,7 @@ const SignIn = () => {
               name="email"
               autoComplete="email"
               autoFocus 
+              className='email-input'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -75,6 +76,7 @@ const SignIn = () => {
               label="Password"
               type="password"
               id="password"
+              className='pass-input'
               autoComplete="current-password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
