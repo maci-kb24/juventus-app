@@ -21,14 +21,6 @@ const Navbar = () => {
           <Link to="/dashboard">
             <Button color="inherit">Dashboard</Button>
           </Link>
-          {/* <Button color="inherit" component={Link} to="/">
-            Home
-          </Button>
-          <Button color="inherit" component={Link} to="/team">
-            The Team
-          </Button> */}
-          {/* <Button sx={{ color: "text.primary", backgroundColor: "background.error", marginRight: '10px' }}  component={Link} to="/login">Log In</Button> */}
-          {/* <Button sx={{ color: "text.primary", backgroundColor: "background.error" }}  component={Link} to="/register">Sign Up</Button> */}
         </Box>
       </Toolbar>
     </AppBar>
