@@ -1,7 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
-import MatchesDetailsCard from "../../components/matches/MatchDetailsCard";
+import MatchesDetailsCard from "./MatchDetailsCard";
 
 const MatchesDetails = () => {
   return (
